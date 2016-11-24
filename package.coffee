@@ -9,6 +9,7 @@ exports.dependencies = dependencies =
     bluebird: "^3.4.6"
     "coffee-script": "^1.11.1"
     "fs.extra": "^1.3.2"
+    "child-process-promise": "^2.2.0"
   # Dependencies used to run inbox-client
   core: {}
 
