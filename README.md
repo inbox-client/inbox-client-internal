@@ -1,5 +1,7 @@
 # Inbox Client
 
+[![Build Status](https://travis-ci.org/inbox-client/inbox-client-internal.svg?branch=master)](https://travis-ci.org/inbox-client/inbox-client-internal)
+
 Inbox Client is an extendable and flexible email client framework written with cross-platform use in mind.
 
 ## Concept
