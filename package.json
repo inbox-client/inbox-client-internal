@@ -4,7 +4,7 @@
   "description": "Inbox Client is an extendable and flexible email client framework written with cross-platform use in mind.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers coffee:coffee-script/register"
   },
   "repository": {
     "type": "git",

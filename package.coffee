@@ -3,7 +3,9 @@ exports.distName = distName = "inbox-client"
 
 exports.dependencies = dependencies =
   # Dependencies used to manage the inbox-client-internal repository
-  dev: {}
+  dev:
+    mocha: "^3.1.2"
+    chai: "^3.5.0"
   # Dependencies used to build inbox-client distributions
   build:
     bluebird: "^3.4.6"
