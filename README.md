@@ -46,7 +46,13 @@ Numbers (:one:, :two:) mark the order that component development is planned.
     to move the burden from browsers onto a more traditional mail client
   - :four: **[Gmail API](https://developers.google.com/gmail/api/)**
     as well as other service-specific APIs, to give stable and lightweight communication.
-3. **Metadata Storage**  
+3. **Email Cache**
+  combines messages from Email Sources.
+  - :one: **Memory Cache**
+    Non-persistent caching.
+  - :two: **[NeDB](https://github.com/louischatriot/nedb)**
+    Caches in flat-files (Electron/Node), IndexedDB, WebSQL, or localStorage.
+4. **Metadata Storage**  
   Plugins (discussed later) can store data about each email, such as [Google Inbox](https://www.google.com/inbox/)'s
   "Done", "Snooze", and categorization, or client-only mailboxes.  Data will be locally cached, as well as synced with a
   server.
@@ -61,7 +67,7 @@ Numbers (:one:, :two:) mark the order that component development is planned.
     providing synchronization between 
   - :four: **[MongoDB](https://github.com/mongodb/node-mongodb-native)**
     provides more optimized storage for Electron or Node installations.
-4. **Plugins**
+5. **Plugins**
   Plugins will provide custom functionality beyond reading and writing emails.  Plugins can store data about each email
   in the Metadata Storage database, and other application-wide data is stored in the Client Settings.
   - :two: **Local Mailboxes/Labels**
@@ -72,7 +78,7 @@ Numbers (:one:, :two:) mark the order that component development is planned.
   - :three: **Inbox-Style Categorization**
     Google Inbox provides categories such as "Promotional", "Travel", "Social".  Provide these categories, storing
     sorting rules in the Client Settings, and caching the categories for emails in Metadata Storage.
-5. **Client Output**
+6. **Client Output**
   Most distributions of Inbox Client will output dynamic HTML content to display the email contents.  A few clients
   might output different HTML pages (MVC style), or provide an API that wraps the above functionality, to allow
   lightweight clients.
