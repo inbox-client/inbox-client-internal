@@ -1,0 +1,20 @@
+{
+  "name": "inbox-client",
+  "version": "0.0.0",
+  "description": "Inbox Client is an extendable and flexible email client framework written with cross-platform use in mind.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inbox-client/inbox-client-internal.git"
+  },
+  "author": "Ryan Leonard (http://ryanleonard.us)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inbox-client/inbox-client-internal/issues"
+  },
+  "homepage": "https://github.com/inbox-client/inbox-client-internal#readme",
+  "dependencies": {}
+}
