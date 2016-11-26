@@ -8,9 +8,16 @@ var Component;
 Component = (function() {
 
   /**
+  @property {ComponentSettings} defines settings that can be configured for instances of this component.
+   */
+  Component.settings = null;
+
+
+  /**
   Abstract definition of a modular component.
   @constructor
    */
+
   function Component() {}
 
   return Component;
