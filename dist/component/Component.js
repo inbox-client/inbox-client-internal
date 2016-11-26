@@ -8,8 +8,16 @@ var Component;
 Component = (function() {
 
   /**
+  @property {String} a unique identifier for this component.
+    An NPM namespace or reverse-domain-name works well.
+   */
+  Component.identifier = "inbox-client/Component";
+
+
+  /**
   @property {ComponentSettings} defines settings that can be configured for instances of this component.
    */
+
   Component.settings = null;
 
 

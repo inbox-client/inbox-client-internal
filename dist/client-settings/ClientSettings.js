@@ -13,6 +13,8 @@ Stores application-wide settings to configure different components.
 ClientSettings = (function(superClass) {
   extend(ClientSettings, superClass);
 
+  ClientSettings.identifier = "Client Settings";
+
 
   /**
   Stores application-wide settings to configure different components.
