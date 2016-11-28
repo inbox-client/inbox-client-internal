@@ -19,5 +19,7 @@ class Component
   @constructor
   ###
   constructor: ->
+    ExtendedComponentSettings = @constructor.settings
+    @settings = new ExtendedComponentSettings()
 
 module.exports = Component

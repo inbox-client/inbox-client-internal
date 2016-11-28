@@ -18,7 +18,26 @@ ComponentSettings = (function() {
   @constructor
    */
 
-  function ComponentSettings() {}
+  function ComponentSettings() {
+    this.initFields();
+  }
+
+
+  /**
+  Create an instance of each field in the settings.
+  @return {ComponentSettings} for chaining
+   */
+
+  ComponentSettings.prototype.initFields = function() {
+    var ExtendedField, field, i, len, ref;
+    this.fields = {};
+    ref = this.constructor.fields;
+    for (ExtendedField = i = 0, len = ref.length; i < len; ExtendedField = ++i) {
+      field = ref[ExtendedField];
+      this.fields[field] = new ExtendedField();
+    }
+    return this;
+  };
 
   return ComponentSettings;
 

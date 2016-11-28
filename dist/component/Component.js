@@ -26,7 +26,11 @@ Component = (function() {
   @constructor
    */
 
-  function Component() {}
+  function Component() {
+    var ExtendedComponentSettings;
+    ExtendedComponentSettings = this.constructor.settings;
+    this.settings = new ExtendedComponentSettings();
+  }
 
   return Component;
 
