@@ -8,9 +8,16 @@ var ComponentSettings;
 ComponentSettings = (function() {
 
   /**
+  @property {Field} defines fields that can be used to configure a component.
+   */
+  ComponentSettings.fields = {};
+
+
+  /**
   Defines the structure of properties that can be set for this component.
   @constructor
    */
+
   function ComponentSettings() {}
 
   return ComponentSettings;
